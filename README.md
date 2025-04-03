@@ -13,5 +13,5 @@ Yusi Yao, Leo Kim, Xavier Akers
 3. Make your own branch. Commit first to your branch and to the main after group approval
 <img width="457" alt="image" src="https://github.com/user-attachments/assets/ef01d9f7-80dc-407d-a4db-e9ac0a7b939c" />
 
-## Timetable due April 22
+## Timetable
 
