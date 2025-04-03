@@ -1,5 +1,5 @@
 # CMDA4654_Group_2
-Yusi Yao,
+Yusi Yao, Leo Kim
 
 ## CODE STYLE
 1. Please use relative path. The "here" package is pretty useful. sample code attached below
