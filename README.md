@@ -2,5 +2,8 @@
 Yusi Yao,
 
 ## CODE STYLE
-1. Please use relative path. The "here" package is pretty useful.
-2. All data should be inside the /data folder
+1. Please use relative path. The "here" package is pretty useful. sample code attached below
+   - fig.path = here("figures/"),  # Store all figures here (ensure this folder exists)
+   - dir.create(here("data"), showWarnings = FALSE)
+   - Zip_zori_uc_sfrcondomfr_sm_month <- read_csv(here("data", "Zip_zori_uc_sfrcondomfr_sm_month.csv"),
+3. All data should be inside the /data folder
