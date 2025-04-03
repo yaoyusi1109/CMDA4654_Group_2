@@ -1,0 +1,60 @@
+---
+title: "Density-Based Spatial Clustering of Applications with Noise"
+author: "Your name here"
+date: "2023-04-18"
+fontsize: 9pt
+classoption: "aspectratio=169"
+output: 
+  beamer_presentation: 
+    fonttheme: professionalfonts
+    highlight: kate
+    theme: Rochester
+header-includes:
+- \definecolor{VTmaroon}{HTML}{861F41}
+- \usecolortheme[named=VTmaroon]{structure}
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = FALSE)
+
+def.chunk.hook  <- knitr::knit_hooks$get("chunk")
+knitr::knit_hooks$set(chunk = function(x, options) {
+  x <- def.chunk.hook(x, options)
+  paste0("\n \\", "footnotesize","\n\n", x, "\n\n \\normalsize")
+})
+
+
+```
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+Do you see the above `##`?  I hate those, you need to figure out how to remove those.
+
+
+## Slide with Plot
+
+
+```{r pressure}
+plot(pressure)
+```
+
+
+
+
