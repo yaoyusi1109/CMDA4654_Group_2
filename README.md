@@ -11,3 +11,5 @@ Yusi Yao,
 <img width="750" alt="image" src="https://github.com/user-attachments/assets/c985c1e0-82a9-41a0-846b-94db0be53124" />
 
 3. Make your own branch. Commit first to your branch and to the main after group approval
+<img width="457" alt="image" src="https://github.com/user-attachments/assets/ef01d9f7-80dc-407d-a4db-e9ac0a7b939c" />
+
