@@ -1,0 +1,21 @@
+---
+title: "CMDA4654_quarto"
+author: "Yusi Yao"
+format: html
+editor: visual
+---
+
+## Description
+
+## Acknowledgements
+
+## Citation
+
+```{r}
+library(sf)
+virginia_map <- st_read('/Users/yusiyao/Desktop/VT/4654_DAML/CMDA4654_project_2/Data/VirginiaSiteAddressPoint.shp/VirginiaSiteAddressPoint.shp')
+```
+
+```{r}
+plot(virginia_map, max.plot = 1)
+```
