@@ -20,3 +20,4 @@ Yusi Yao, Leo Kim, Xavier Akers
 2. Crime Mapping in BB https://www.crimemapping.com/map/va/blacksburg
 3. FBI Explorer https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend
 4. Crime Mapping https://bookdown.org/gmcirco42/crime_mapping_and_analysis/
+5. Map Visualization https://r.geocompx.org/adv-map
