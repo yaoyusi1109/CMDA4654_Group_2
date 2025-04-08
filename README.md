@@ -21,3 +21,4 @@ Yusi Yao, Leo Kim, Xavier Akers
 3. FBI Explorer https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend
 4. Crime Mapping https://bookdown.org/gmcirco42/crime_mapping_and_analysis/
 5. Map Visualization https://r.geocompx.org/adv-map
+6. VA Street Map https://vgin.vdem.virginia.gov/datasets/virginia-address-points/about
