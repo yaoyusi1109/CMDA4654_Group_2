@@ -13,9 +13,11 @@ editor: visual
 
 ```{r}
 library(sf)
-virginia_map <- st_read('/Users/yusiyao/Desktop/VT/4654_DAML/CMDA4654_project_2/Data/VirginiaSiteAddressPoint.shp/VirginiaSiteAddressPoint.shp')
+library(here)
+
+virginia_map <- st_read(here("Data", "VirginiaSiteAddressPoint.shp", "VirginiaSiteAddressPoint.shp"))
 ```
 
 ```{r}
-plot(virginia_map, max.plot = 1)
+
 ```
