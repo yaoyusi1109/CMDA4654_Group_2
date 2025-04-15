@@ -1,7 +1,7 @@
 ---
 title: "Density-Based Spatial Clustering of Applications with Noise"
-author: "Your name here"
-date: "2023-04-18"
+author: "Yusi Yao, Leo Kim, Xavier Akers, Annalise Broerman"
+date: "2025-04-22"
 fontsize: 9pt
 classoption: "aspectratio=169"
 output: 
@@ -27,34 +27,136 @@ knitr::knit_hooks$set(chunk = function(x, options) {
 
 ```
 
-## R Markdown
+## Introduction
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
-
-## Slide with Bullets
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-## Slide with R Output
-
-```{r cars, echo = TRUE}
-summary(cars)
-print("Hello World")
-```
-
-Do you see the above `##`?  I hate those, you need to figure out how to remove those.
+Density-based spacial clustering of applications with noise (DBSCAN) is a clustering technique that uses certain aspects of a dataset to form groups of data points.
 
 
-## Slide with Plot
+## When Is This Useful? 
+
+DBSCAN is unique from other clustering applications, such as K-means, in the sense that instead of the user choosing the number of clusters, DBSCAN does it for the user. Also, DBSCAN is not bound by certain shapes of data, meaning if the dataset itself seems off, DBSCAN can still be used. Finally, DBSCAN is resistant to outliers.
 
 
-```{r pressure}
-plot(pressure)
-```
+## The DBSCAN Algorithm
+
+
+
+## Theory Behind DBSCAN
+
+DBSCAN is conducted in the following way:
+
+- 
+
+
+## Example 1 Description
+
+
+
+
+## Example 1 Data
+
+
+
+
+## Example 1
+
+
+
+
+
+## Example 1
+
+
+
+
+## Example 1 Visual
+
+
+
+
+## Example 1 Visual
+
+
+
+
+## Example 2 Description
+
+
+
+
+## Example 2 Data
+
+
+
+
+## Example 2
+
+
+
+
+## Example 2
+
+
+
+
+## Example 2 Visual
+
+
+
+
+## Example 2 Visual
+
+
+
+
+## Real-World Example Description
+
+
+
+
+## Real-World Data
+
+
+
+
+## Real-World Example
+
+
+
+
+## Real-World Example
+
+
+
+
+## Real-World Example
+
+
+
+
+## Real-World Example Visual
+
+
+
+
+
+## Real-World Example Visual
+
+
+
+
+## Real-World Example Visual
+
+
+
+
+## Conclusion
+
+
+
+
+## References
+
 
 
 
