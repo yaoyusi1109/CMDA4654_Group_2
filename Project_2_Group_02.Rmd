@@ -29,135 +29,60 @@ knitr::knit_hooks$set(chunk = function(x, options) {
 
 ## Introduction
 
-Density-based spacial clustering of applications with noise (DBSCAN) is a clustering technique that uses certain aspects of a dataset to form groups of data points.
+Density-based spacial clustering of applications with noise (DBSCAN) is an unsupervised clustering technique that uses certain aspects of a dataset to form groups of data points.
 
 
 ## When Is This Useful? 
 
-DBSCAN is unique from other clustering applications, such as K-means, in the sense that instead of the user choosing the number of clusters, DBSCAN does it for the user. Also, DBSCAN is not bound by certain shapes of data, meaning if the dataset itself seems off, DBSCAN can still be used. Finally, DBSCAN is resistant to outliers.
+DBSCAN is useful for
+
+## Example Image
+
+medium.com image
+
+## Advantages
+
+- Separates high density vs. low density clusters well
+- Handles outliers well by identifying them as noise
+- Does not assume shape of clusters, helpful for real-world data
+- Great for large datasets and can be efficient with O(n log n) complexity
+
+## Disadvantages
+
+- Clusters with similar densities are hard to separate
+- High dimensional data can cause problems if it has too many dimensions
+- Sensitive to choice of epsilon and MinPts
+- Sensitive to noise
+- Choosing parameters can be difficult
 
 
 ## The DBSCAN Algorithm
 
+DBSCAN begins by dividing a dataset into a number of dimensions, n. Next, a shape with that number of dimensions is formed around each data point. The number of points around that shape is counted and considered a cluster. This cluster expands by counting how many points are near each data point within the cluster.
 
 
-## Theory Behind DBSCAN
+Check this
 
-DBSCAN is conducted in the following way:
+## Example Image
 
-- 
+medium.com image
 
+## Important Concepts: Core Points
 
-## Example 1 Description
+Within the DBSCAN algorithm, core points have a minimum number of neighbor points, or MinPts, within an epsilon distance of the point itself.
 
+## Important Concepts: Border Points
 
+Border points have no minimum number of neighbor points near them and are within an epsilon distance of a core point.
 
+## Important Concepts: Noise Points
 
-## Example 1 Data
+Noise points are points that are neither core points or border points.
 
+## Example Image
 
+datacamp.com image
 
+## Important Concepts: Density Reachability
 
-## Example 1
-
-
-
-
-
-## Example 1
-
-
-
-
-## Example 1 Visual
-
-
-
-
-## Example 1 Visual
-
-
-
-
-## Example 2 Description
-
-
-
-
-## Example 2 Data
-
-
-
-
-## Example 2
-
-
-
-
-## Example 2
-
-
-
-
-## Example 2 Visual
-
-
-
-
-## Example 2 Visual
-
-
-
-
-## Real-World Example Description
-
-
-
-
-## Real-World Data
-
-
-
-
-## Real-World Example
-
-
-
-
-## Real-World Example
-
-
-
-
-## Real-World Example
-
-
-
-
-## Real-World Example Visual
-
-
-
-
-
-## Real-World Example Visual
-
-
-
-
-## Real-World Example Visual
-
-
-
-
-## Conclusion
-
-
-
-
-## References
-
-
-
-
-
+## Important Concepts: Density Connectivity
