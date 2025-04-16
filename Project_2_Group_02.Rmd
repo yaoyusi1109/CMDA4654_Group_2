@@ -29,16 +29,20 @@ knitr::knit_hooks$set(chunk = function(x, options) {
 
 ## Introduction
 
-Density-based spacial clustering of applications with noise (DBSCAN) is an unsupervised clustering technique that uses certain aspects of a dataset to form groups of data points.
+During our time in CMDA 4654, we have been taught about different clustering algorithms such as k-means. Algorithms as such give data scientists a better understanding of the patterns in the data as well as a better understanding of the data itself. 
+
+Density-based spacial clustering of applications with noise (DBSCAN) is an unsupervised clustering technique that uses certain aspects of a dataset to form groups of data points. Since it's unsupervised, data points do not need to be labeled in order for the algorithm to work and thus allows a data scientists to analyze large sets of data efficiently.
 
 
 ## When Is This Useful? 
 
-DBSCAN is useful for
+DBSCAN is useful for when an analyst is unaware of the amount of clusters needed for their dataset or when the dataset itself has varying densities. Since DBSCAN is a density based clustering algorithm, it can determine where in the data multiple points occur in high densities, and vise versa. This method is very useful since outliers get classified as noise so the model itself does not get impacted by these outlying points.
+
+DBSCAN can be more effective than k-means when clusters may not be entirely spherical, when you do not need to specify the number of clusters, when outliers may become a problem, or when looking for fairly consistent results.
 
 ## Example Image
 
-medium.com image
+![](/Users/abroe/Desktop/dbscan1.png)
 
 ## Advantages
 
@@ -56,33 +60,41 @@ medium.com image
 - Choosing parameters can be difficult
 
 
-## The DBSCAN Algorithm
+## The DBSCAN Algorithm Overview
 
-DBSCAN begins by dividing a dataset into a number of dimensions, n. Next, a shape with that number of dimensions is formed around each data point. The number of points around that shape is counted and considered a cluster. This cluster expands by counting how many points are near each data point within the cluster.
+DBSCAN begins by dividing a dataset into a number of dimensions, n. Next, a shape with that number of dimensions is formed around each data point. The number of points around that shape is counted and considered a cluster. This cluster expands by counting how many neighbor points are near each data point within the cluster.
 
-
-Check this
-
-## Example Image
-
-medium.com image
 
 ## Important Concepts: Core Points
 
-Within the DBSCAN algorithm, core points have a minimum number of neighbor points, or MinPts, within an epsilon distance of the point itself.
+Within the DBSCAN algorithm, core points have a minimum number of neighbor points, or MinPts, within an epsilon distance of the point itself. The point being considered as a core point is included when counting the minimum number of points near it. 
+
+![](/Users/abroe/Desktop/dbscan3.png)
+
+
 
 ## Important Concepts: Border Points
 
-Border points have no minimum number of neighbor points near them and are within an epsilon distance of a core point.
+Border points have no minimum number of neighbor points near them and are within an epsilon distance of a core point. These points are considered as part of the cluster because of the epsilon distance.
+
+![](/Users/abroe/Desktop/dbscan3.png)
+
 
 ## Important Concepts: Noise Points
 
-Noise points are points that are neither core points or border points.
+Noise points are points that are neither core points or border points. This is an example of how DBSCAN is robust to outliers and considers them as noise, therfore not effecting the model.
 
-## Example Image
+![](/Users/abroe/Desktop/dbscan3.png)
 
-datacamp.com image
 
-## Important Concepts: Density Reachability
+## The DBSCAN Algorithm
 
-## Important Concepts: Density Connectivity
+First, the user chooses epsilon, or the distance that considers a point a "neighbor point". In order to determind what is considered a dense area of data, the user also chooses MinPts, or the minimun number of points.
+
+The DBSCAN algorithm chooses a point from the dataset, then all points within epsilon distance are retrieved. Noise points are labeled based on MinPts. If they are less than this number, they get labeled as noise points. A core point is marked and a cluster is formed when the number of MinPts within epsilon distance is reached.
+
+## The DBSCAN Algorithm Continued
+
+The cluster gets expanded since all of the neighbor points to the core points are added in. For each neighbor point, if it is a core point, then the neighborhood of that core point also get added to the cluster. Otherwise, the point gets marked as a border point and the cluster ends there.
+
+This process gets repeated until all points in the dataset are visited. After this occurs, the algorithm marks the clusters and examines the noise points to determine if they are within epsilon distance of a core point. If they are, they become border points and the remaining points not in a cluster are considered noise.
