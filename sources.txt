@@ -1,1 +1,7 @@
-https://medium.com/@satpatishrimanta/clustering-by-dbscan-density-based-spatial-clustering-of-applications-with-noise-clearly-f93c5c72f706
+https://www.datacamp.com/tutorial/dbscan-clustering-algorithm
+https://medium.com/@sachinsoni600517/clustering-like-a-pro-a-beginners-guide-to-dbscan-6c8274c362c4
+https://www.newhorizons.com/resources/blog/dbscan-vs-kmeans-a-guide-in-python
+https://builtin.com/articles/dbscan
+https://elutins.medium.com/dbscan-what-is-it-when-to-use-it-how-to-use-it-8bd506293818
+
+
